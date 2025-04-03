@@ -1,0 +1,298 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: "Montserrat", sans-serif; /* Ajouter un fallback */
+}
+.best-items {
+    margin: 50px;
+}
+body {
+    background: url("../images/backGFfond.jpeg") no-repeat center center fixed;
+    background-size: cover; /* Assure que l'image couvre toute la page */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Hauteur de la page */
+    font-family: 'Poppins', sans-serif; /* Appliquer la police 'Poppins' */
+}
+
+/* Applique un fond d'écran avec une légère ombre sur la section top-page */
+section.top-page {
+    position: relative;
+}
+
+section.top-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ombre semi-transparente pour améliorer la lisibilité */
+    z-index: -1; /* Placer l'ombre derrière le contenu */
+}
+body {
+    margin: 0 auto;
+}
+
+/* tête de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+    transition: all 0.3s ease; /* Transition fluide pour l'effet au survol */
+}
+
+header.header img:hover {
+    filter: brightness(1.2);  /* Augmentation de la luminosité au survol */
+    border-radius: 5px; /* Arrondi des coins */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Ombre autour de l'image au survol */
+}
+
+
+section.top-page {
+    height: 80vh;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+/* Effet mat au survol de section.top-page */
+section.top-page:hover {
+    opacity: 0.7; /* Réduit l'opacité pour rendre le GIF plus mat */
+    filter: brightness(0.7); /* Ajuste la luminosité pour renforcer l'effet */
+}
+
+
+.landing-page {
+    position: relative;
+    display: flex; /* Active flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Assure que la landing page occupe tout l'écran */
+    box-sizing: border-box; /* Inclut les paddings dans la hauteur totale */
+}
+
+.big-title {
+    font-size: clamp(3rem, 8vw, 150px); /* Taille responsive */
+    font-family: "Jazz LET", fantasy;
+    color: white;
+    text-align: center;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    animation: titleFadeIn 1s ease-in-out;
+}
+
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* navigation */
+.nav a {
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Enlever la soulignure */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation pour effet hover */
+    border-radius: 5px;
+}
+
+.nav a:hover,
+.nav a.active {
+    background-color: #555; /* Couleur de fond au survol ou actif */
+    color: #ffcc00; /* Couleur du texte au survol ou actif */
+}
+
+.Dnav {
+    display: flex; /* Assure que .Dnav est un conteneur flex */
+    justify-content: flex-end; /* Aligne le contenu à droite */
+    width: 100%; /* Assure que .Dnav prend toute la largeur disponible */
+}
+
+nav.nav {
+    display: flex; /* Active le mode flexbox */
+    flex-direction: row;
+    list-style: none; /* Supprime les puces des listes */
+    margin-left: auto; /* Pousse le conteneur nav à droite */
+    margin: 20px 0px 20px 20px;
+}
+/* produit gestion */
+
+.Text-base {
+    margin: 80px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column; /* Aligner les items verticalement */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centre le texte à l'intérieur */
+}
+
+/* Titre centré */
+.section-title3 {
+    margin-bottom: 20px; /* Espacement en bas du titre */
+    font-size: 2em;
+    color: #333;
+}
+
+/* Conteneur des items */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+/* Style des images */
+.service-item img {
+    margin-bottom: 10px; /* Espacement entre l'image et le texte */
+    max-width: 100%; /* Image responsive */
+    height: auto;
+    border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+/* Style des liens */
+.service-item a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Couleur des liens */
+    font-size: 4em;
+    transition: color 0.3s ease;
+}
+
+.service-item a:hover {
+    color: red; /* Couleur au survol */
+}
+/* gestions titre */
+
+.section-title {
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    font-weight: 100;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    color: white;
+}
+
+.section-title::before {
+    content: "Les Evénements";
+    position: absolute;
+    background-color: red;
+    width: 400px;
+    height: 7px;
+    bottom: 0;
+    color: white;
+    
+}
+
+.section-title8 {
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    font-weight: 100;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    color: white;
+}
+
+.section-title8::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 7px;
+    bottom: 0;
+    color: white;
+    
+}
+
+.section-title8_1 {
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    font-weight: 100;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    color: white;
+}
+
+/* Personnalité Gestion */
+
+.Personnalité-Connues{
+    margin: 100px;
+}
+
+.Personnalité{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+.Pers1{
+    background-image: url(../images/ZoulouxYGO.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.Pers2{
+    background-image: url(../images/Doc_Seven_2017.jpg);
+    grid-column: 3/5;
+}
+
+.Pers3{
+    background-image: url(../images/XariYGO.jpg);
+    grid-column: 3/5;
+}
+
+.Pers4{
+    background-image: url(../images/YubelYGO.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.Pers5{
+    background-image: url(../images/SamirBYGO.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.Pers6{
+    background-image: url(../images/Gabriel_SoussiYGO.webp);
+    grid-column: 4;
+    grid-row: 3/5;
+    background-size: cover;
+}
+
+/* pied de page */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+    color: white;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: white;
+}

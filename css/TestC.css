@@ -1,0 +1,220 @@
+.best-items {
+    margin: 70px;
+}
+
+.section-title5 {
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    font-weight: 100;
+    color: white;
+}
+
+/* Styles du pseudo-élément ::before */
+.section-title5::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 400px;
+    height: 7px;
+    bottom: 0;
+    color: white;
+    
+}
+
+.section-title9 {
+    font-family: "Abril Fat Face", cursive;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    font-weight: 100;
+    font-size: 3.5em;
+    color: rgb(17, 0, 254);
+    text-shadow: 0 0 15px rgba(243, 156, 18, 0.8), 0 0 30px rgba(243, 156, 18, 0.6), 0 0 45px rgba(243, 156, 18, 0.4); /* Glowing effect */
+}
+
+/* Styles du pseudo-élément ::before */
+.section-title9::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 400px;
+    height: 7px;
+    bottom: 0;
+    color: red;
+    
+}
+
+.content {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 20px 1800px 20px 20px;
+}
+
+.perso{
+    width: 20%;
+    height: 90px; /*hauteur*/
+    width: 380px; /*largeur*/
+    background-color: #334e6973;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 2px solid rgb(71, 71, 71);
+    transition: 0,2s;
+    cursor: pointer;
+    z-index: 2; /* mettre au premier plan */
+    transform: translateZ(0); /* mettre au premier plan */
+}
+
+.perso:hover{
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+
+.perso .left{
+    height: 100%;
+    width: 150px;
+    /* background-color: #0d1925; */
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: auto;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000; /* Plus élevé que les autres éléments */
+    position: relative; /* Pour s'assurer qu'il suit le flux normal */
+    pointer-events: auto !important; /* Garantir qu'il est cliquable */
+}
+    
+
+.menu:nth-child(1) .perso .left{
+    background-image: url(../images/pngegg1.png);
+    background-size: cover; 
+    
+}
+
+.menu:nth-child(2) .perso .left{
+    background-image: url(../images/pngegg2.png);
+    background-size: cover; 
+    
+}
+
+.menu:nth-child(3) .perso .left{
+    background-image: url(../images/pngegg3.png);
+    background-size: cover;
+    
+}
+
+.menu:nth-child(4) .perso .left{
+    background-image: url(../images/pngegg4.png);
+    background-size: cover;
+}
+
+.menu:nth-child(5) .perso .left{
+    background-image: url(../images/pngegg5.png);
+    background-size: cover;
+}
+
+.menu:nth-child(6) .perso .left{
+    background-image: url(../images/pngegg6.png);
+    background-size: cover;
+    
+}
+
+.text h1{
+    color: rgb(86, 44, 44);
+    font-family: 'Blippo', fantasy;
+    font-size: 2.5em;
+    font-weight: 400;
+    width: 600px;
+    margin: 490px 0px 0px 60px;
+    
+}
+
+.perso-bg{
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    top: 0; /* mettre au second plan */
+    left: 20%;
+    z-index: 1;
+}
+
+.text-bg{
+    width: 60%;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    top: 0;
+    left: 10%;
+    z-index: 4;
+    margin: 300px 150px 0px 300px;
+    pointer-events: none; /* Permet aux clics de passer à travers par défaut */
+}
+
+.audessus{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    top: 0;
+    z-index: 3;
+}
+
+.perso-bg img {
+    display: none;
+}
+
+.active .perso{
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+
+.active .perso-bg img {
+    display: flex;
+    margin-bottom: 150px;
+    
+}
+
+
+/* bg-test */
+
+.text-bg h1{
+    display: none;
+}
+
+.text-bg button{
+    display: none;
+
+}
+
+.active .text-bg h1 {
+    display: flex;
+    
+}
+.active .text-bg button{
+    display: flex;
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+

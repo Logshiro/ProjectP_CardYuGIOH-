@@ -1,0 +1,61 @@
+
+/* text section titre */
+
+.vidéo1 a p {
+    color: white; /* Couleur initiale du texte */
+    transition: color 0.3s; /* Transition douce pour la couleur */
+}
+
+.vidéo1 a:hover p {
+    color: #333; /* Couleur plus sombre lors du survol */
+}
+
+/* vidéo */
+
+iframe {
+    transition: filter 0.3s ease; /* Transition douce pour l'effet */
+}
+
+iframe:hover {
+    filter: brightness(1.2); /* Augmente la luminosité au survol */
+}
+
+.service-item2 {
+    text-align: center;
+}
+
+.service2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 120px;
+}
+
+.service2 div {
+    border: 10px solid rgba(255, 255, 255, 0.5); /* Bordure blanche mate avec opacité (0.5) */
+    padding: 10px; /* Espace intérieur pour que le contenu ne touche pas la bordure */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animation sur la couleur de la bordure et l'ombre */
+}
+
+.service2 div:hover {
+    border-color: white; /* Bordure devient complètement blanche au survol */
+    box-shadow: 0 0 10px white; /* Ajoute un effet d'ombre au survol */
+}
+
+.service-item2 img {
+    max-width: 100%; /* Empêche les images de dépasser leur conteneur */
+    height: auto;
+}
+
+.service-item2 p{
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    font-weight: 100;
+    position: relative;
+    color: white;
+}
+
+.service-item2 {
+    text-align: center;
+}

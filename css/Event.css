@@ -1,0 +1,144 @@
+
+.section-title2 {
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    font-weight: 100;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément */
+    color: white; /* Applique la couleur blanche au texte */
+}
+
+/* Styles du pseudo-élément ::before */
+.section-title2::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    height: 7px;
+    bottom: 0;
+    
+}
+
+.section-title3 {
+    font-size: 50px;
+    font-family: "Abril Fat Face", cursive;
+    font-weight: 100;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    color: white;
+}
+
+/* Styles du pseudo-élément ::before */
+.section-title3::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 150px;
+    height: 7px;
+    bottom: 0;
+    color: white;
+    
+}
+
+/* Event gestion */
+
+.Les-Evenements {
+    margin-top: 150px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Espace entre les éléments */
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.Event-box {
+    height: 100%;
+    position: relative;
+    background-size: contain; /* Assure que toute l'image est visible */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans le conteneur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour survol */
+}
+
+.Event-box2 {
+    height: 100%;
+    position: relative;
+    background-size: cover; /* Assure que toute l'image est visible */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center; /* Centre l'image dans le conteneur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour survol */
+}
+
+.no-grid {
+    min-width: calc(50% - 20px); /* Deux éléments par ligne avec un espacement de 20px */
+    height: 500px;
+    flex-grow: 1;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Pour éviter que l'effet dépasse */
+}
+
+.no-grid:hover {
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+
+.no-grid2 {
+    min-width: calc(50% - 20px); /* Deux éléments par ligne avec un espacement de 20px */
+    flex-grow: 1;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Pour éviter que l'effet dépasse */
+}
+
+.no-grid2:hover {
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+
+/* Appliquer les images avec la propriété contain */
+.event1 {
+    background-image: url(../images/World-event.png);
+    background-size: contain; /* Afficher toute l'image */
+}
+
+.event2 {
+    background-image: url(../images/YCS_Logo.png);
+    background-size: contain; /* Afficher toute l'image */
+}
+
+.event3 {
+    background-image: url(../images/France-event.png);
+    background-size: contain; /* Afficher toute l'image */
+}
+
+.event4 {
+    background-image: url(../images/Local-event.jpg);
+    background-size: contain; /* Afficher toute l'image */
+}
+
+.event-details {
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);  /* Fond semi-transparent */
+    padding: 20px 20px;
+}
+
+.name-event {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;  /* Couleur de texte */
+}
+
+.participation-event {
+    color: red;
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px white;
+    text-transform: uppercase;
+    font-style: italic;
+}

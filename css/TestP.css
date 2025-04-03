@@ -1,0 +1,124 @@
+.best-items {
+    margin: 70px;
+}
+
+.section-title6 {
+    font-size: 50px;
+    font-family: 'Abril Fat Face', cursive;
+    position: relative; /* Nécessaire pour le positionnement du pseudo-élément *//*text-align: center; /* Centre le texte horizontalement */
+    font-weight: 100;
+    color: white;
+}
+
+/* Styles du pseudo-élément ::before */
+.section-title6::before {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 400px;
+    height: 7px;
+    bottom: 0;
+    color: white; 
+}
+
+.content {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 20px;
+}
+
+.perso{
+    width: 20%;
+    height: 90px; /*hauteur*/
+    width: 380px; /*largeur*/
+    background-color: #334e6973;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 2px solid rgb(71, 71, 71);
+    transition: 0,2s;
+    cursor: pointer;
+    z-index: 2; /* mettre au premier plan */
+    transform: translateZ(0); /* mettre au premier plan */
+}
+
+.perso:hover{
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+
+.perso .left{
+    height: 100%;
+    width: 90px;
+    background-color: #0d1925;
+}
+
+.menu:nth-child(1) .perso .left{
+    background-image: url(../images/pngegg1.png);
+    background-size: cover;
+}
+
+.menu:nth-child(2) .perso .left{
+    background-image: url(../images/pngegg2.png);
+    background-size: cover;
+}
+
+.menu:nth-child(3) .perso .left{
+    background-image: url(../images/pngegg3.png);
+    background-size: cover;
+}
+
+.menu:nth-child(4) .perso .left{
+    background-image: url(../images/pngegg4.png);
+    background-size: cover;
+}
+
+.menu:nth-child(5) .perso .left{
+    background-image: url(../images/pngegg5.png);
+    background-size: cover;
+}
+
+.menu:nth-child(6) .perso .left{
+    background-image: url(../images/pngegg6.png);
+    background-size: cover;
+}
+
+.perso .right h1 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.perso-bg{
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    left: 30%;
+    z-index: 1;
+}
+
+.active .perso{
+    transform: scale(1.05);  /* Agrandir légèrement au survol */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.7);  /* Brillance */
+}
+
+.perso-bg img {
+    display: none;
+}
+
+.active .perso-bg img {
+    display: flex;
+}

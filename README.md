@@ -4,8 +4,7 @@
 
 <style>
   p {
-		padding-top: 100px;
-		}
+	padding-top: 100px;}
 </style>
 <p align="left">
   <img align="center" width="30%" src="https://github.com/user-attachments/assets/9a302e89-334f-423b-8f34-25a2f2ea0b64" />

@@ -3,6 +3,6 @@
 ### REALISE PAR QUENTIN
 
 
-<p align="left" style="margin-top: 500px;">
-  <img align="center" width="30%" src="https://github.com/user-attachments/assets/9a302e89-334f-423b-8f34-25a2f2ea0b64" />
+<p style="margin-top: 500px; text-align: left;">
+  <img width="30%" src="https://github.com/user-attachments/assets/9a302e89-334f-423b-8f34-25a2f2ea0b64" />
 </p>
